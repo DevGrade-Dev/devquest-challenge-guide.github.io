@@ -170,9 +170,17 @@ Although the challenges are independent from one another, it will be easier for 
 
 Note : We also have provided you with some challenges related to the features of the application that will not be evaluated for the competition.
 
-Have fun!
+| Hobby Scout | Colab Hub | Project Mate |
+| [Challenge 0](./challenge-00.md)| [Challenge 5](./default-challenge.md)| [Challenge 9](./default-challenge.md) |
+| [Challenge 1](./default-challenge.md)| [Challenge 6](./default-challenge.md)| [Challenge 10](./default-challenge.md) |
+| [Challenge 2](./default-challenge.md)| [Challenge 7](./default-challenge.md)| [Challenge 11](./default-challenge.md) |
+| [Challenge 3](./default-challenge.md)| [Challenge 8](./default-challenge.md)| [Challenge 12](./default-challenge.md) |
+| [Challenge 4](./default-challenge.md)| | [Challenge 13](./default-challenge.md) |
+| | | [Challenge 14](./default-challenge.mdd) |
+| | | [Challenge 15](./default-challenge.md) |
+| | | [Challenge 16](./default-challenge.md) |
 
-You can now try out the [Challenge 0](./challenge-00.md) for the test run.
+Have coding !
 
 ## Getting support
 
