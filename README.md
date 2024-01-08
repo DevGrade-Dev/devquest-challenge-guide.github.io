@@ -1,6 +1,6 @@
 # Welcome to `DevQuest Final Round 2024`
 
->> DISCLAIMER: Please note that this project is created only for the purpose of DevQuest Final Round Run 2024 and does NOT represent best practices of software development. The project contains purposefully placed errors, bad design practices, bad code quality, and security malpractices.
+>> DISCLAIMER: Please note that this project is created only for the purpose of DevQuest Final Round 2024 and does NOT represent best practices of software development. The project contains purposefully placed errors, bad design practices, bad code quality, and security malpractices.
 >>
 
 1. [Setting up your environment](#setting-up-your-environment)
