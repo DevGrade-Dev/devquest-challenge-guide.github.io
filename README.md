@@ -176,7 +176,7 @@ Note : We also have provided you with some challenges related to the features of
 | [Challenge 2](./default-challenge.md)| [Challenge 7](./default-challenge.md)| [Challenge 11](./default-challenge.md) |
 | [Challenge 3](./default-challenge.md)| [Challenge 8](./default-challenge.md)| [Challenge 12](./default-challenge.md) |
 | [Challenge 4](./default-challenge.md)| | [Challenge 13](./default-challenge.md) |
-| | | [Challenge 14](./default-challenge.mdd) |
+| | | [Challenge 14](./default-challenge.md) |
 | | | [Challenge 15](./default-challenge.md) |
 | | | [Challenge 16](./default-challenge.md) |
 
