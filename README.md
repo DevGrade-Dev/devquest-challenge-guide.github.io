@@ -180,7 +180,7 @@ Note : We also have provided you with some challenges related to the features of
 | | | [Challenge 15](./default-challenge.md) |
 | | | [Challenge 16](./default-challenge.md) |
 
-Have coding !
+Have fun and happy coding !
 
 ## Getting support
 
