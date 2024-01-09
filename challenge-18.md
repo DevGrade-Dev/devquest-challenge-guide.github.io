@@ -23,7 +23,7 @@ The test ensures that users can get paginated search results without providing a
 
 This test verifies that users can get paginated search results with a keyword. It checks if the response contains the expected user information after a search. Modify the method `getPeopleFromKeyword(id, keyword, pageNumber)` inside the `friendsRepository` to handle paginated searches with a keyword. Here's what you need to do:
 
-1. Use SQL queries to retrieve paginated search results without a keyword (empty keyword) based on the provided user `id` (Authenticated user) and the page number.
+1. Use SQL queries to retrieve paginated search results with a keyword based on the provided user `id` (Authenticated user) and the page number.
 2. Exclude the authenticated user from the results.
 3. Check the keyword within users' first and last names, as well as their skills and hobby names.
 4. Return the response in the specified format, including user information, friend status, and friend request ID.
