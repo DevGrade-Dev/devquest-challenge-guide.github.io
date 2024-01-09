@@ -19,6 +19,11 @@ The test ensures that users can get paginated search results without providing a
 2. Exclude the authenticated user from the results.
 3. Return the response in the specified format, including user information, friend status, and friend request ID.
 
+Upon successful implementation, the result should resemble:
+<p align="center">
+  <img src="./images/18a.png" width="350px">
+</p>
+
 ## Challenge 18.b
 
 This test verifies that users can get paginated search results with a keyword. It checks if the response contains the expected user information after a search. Modify the method `getPeopleFromKeyword(id, keyword, pageNumber)` inside the `friendsRepository` to handle paginated searches with a keyword. Here's what you need to do:
@@ -27,6 +32,11 @@ This test verifies that users can get paginated search results with a keyword. I
 2. Exclude the authenticated user from the results.
 3. Check the keyword within users' first and last names, as well as their skills and hobby names.
 4. Return the response in the specified format, including user information, friend status, and friend request ID.
+
+Upon successful implementation, the result should resemble:
+<p align="center">
+  <img src="./images/18b.png" width="350px">
+</p>
 
 ### Example
 
