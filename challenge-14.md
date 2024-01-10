@@ -1,25 +1,23 @@
-# Challenge 14 - Edit task details
+# Challenge 14 - Update project status
 
-The user is also able to edit and update the details of a task of a relevent project.
-
-<p align="center">
-  <img src="./images/10a.png" width="350px">
-</p>
-
-After clicking on the save button, the updated details will be shown on the task detail modal as shown in the image below.
+In this challenge you have to enable the user to update the status of a project and the project has to be switched to the correct swim lane in the project dashboard depending on its status.
 
 <p align="center">
-  <img src="./images/10b.png" width="350px">
+  <img src="./images/11a.png" width="350px">
 </p>
 
-To achieve this, you first have to implement the `updateTask(details, taskId)` method inside the `groupRepository.js` file where a Promise with an UPDATE query is returned. 
+<p align="center">
+  <img src="./images/11b.png" width="350px">
+</p>
+
+To achieve this, you have to impelement the `updateProjectStatus(projectId, status)` method in the `groupRepository` file and this time it has to be returning a Promise which has an UPDATE query which updates the status of the project using the projectId. 
 
 The Promise has to resolve a message saying `"success"`.
 
-Afterwards, as done in the previous task you have to,
+Afterwards, as done in the previous tasks you have to,
 
-1. Implement a method called `updateTaskReq(details, taskId)` in the `groupService.js` file which will call the `groupRepository.updateTask(details, taskId)` method and return the response.
+1. Implement a method called `updateProjectStatusReq(projectId, status)` in the `groupService.js` file which will call the `groupRepository.updateProjectStatus(projectId, status)` method and return the response.
 
-2. Create the relevent route that is being called from the frontend in the `groupRoutes.js` file which will call the `groupService.updateTaskReq(details, taskId)` method.
+2. Create the relevent route that is being called from the frontend in the `groupRoutes.js` file which will call the `groupService.updateProjectStatusReq(projectId, status)` method.
 
 **HINT** - Don't forget to export the defined methods in the necessary files.

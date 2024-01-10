@@ -1,6 +1,6 @@
 # Challenge 7 - Whiteboard Save & Load
 
-After completing Challenge 13 & 14, your users will be able to join groups now. Once you are a part of group, you can go to the Whiteboard page and view the whiteboard of your joined group.
+After completing Challenge 12 & 13, your users will be able to join groups now. Once you are a part of group, you can go to the Whiteboard page and view the whiteboard of your joined group.
 
 <p align="center">
   <img src="./images/15a.png" width="700px">

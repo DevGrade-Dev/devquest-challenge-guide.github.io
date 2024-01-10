@@ -1,46 +1,25 @@
-# Challenge 13 - Edit project details
+# Challenge 13 - Edit task details
 
-The user is able to edit and update the details of a project only if that user is the owner of that project.
-
-<p align="center">
-  <img src="./images/9a.png" width="350px">
-</p>
-
-Note that the above Edit button is only visible if that user is the owner of that project. If the user is not the owner of that project, then the edit button will be hidden.
+The user is also able to edit and update the details of a task of a relevent project.
 
 <p align="center">
-  <img src="./images/9b.png" width="350px">
+  <img src="./images/10a.png" width="350px">
 </p>
 
-After clicking on the save button the updated details will be shown on the project detail modal as shown in the image below.
+After clicking on the save button, the updated details will be shown on the task detail modal as shown in the image below.
 
 <p align="center">
-  <img src="./images/9c.png" width="350px">
+  <img src="./images/10b.png" width="350px">
 </p>
 
-To achieve this, you first have to implement the `updateProject(details, projectId)` method inside the `groupRepository.js` file where a Promise with an UPDATE query is returned. 
+To achieve this, you first have to implement the `updateTask(details, taskId)` method inside the `groupRepository.js` file where a Promise with an UPDATE query is returned. 
 
 The Promise has to resolve a message saying `"success"`.
 
-Next you have to implement a method in the `groupService.js` file in the format shown below.
+Afterwards, as done in the previous task you have to,
 
-```javascript
-async function updateProjectReq(details, projectId) {
-  const response = await groupRepository.updateProject(details, projectId);
-  return { response: response, status: httpStatus.OK };
-}
-```
+1. Implement a method called `updateTaskReq(details, taskId)` in the `groupService.js` file which will call the `groupRepository.updateTask(details, taskId)` method and return the response.
 
-Finally you have to create the relevent route that is being called from the frontend in the `groupRoutes.js` file as shown below.
-
-```javascript
-router.put("<INSERT ROUTE HERE>", async (req, res) => {
-    // Retrive and define the necessary parameters from the request body and parameter here
-
-
-    const response = await groupService.updateProjectReq(details, projectId);
-    res.status(response.status).json(response);
-});
-```
+2. Create the relevent route that is being called from the frontend in the `groupRoutes.js` file which will call the `groupService.updateTaskReq(details, taskId)` method.
 
 **HINT** - Don't forget to export the defined methods in the necessary files.
