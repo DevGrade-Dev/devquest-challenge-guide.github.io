@@ -1,27 +1,46 @@
-# Challenge 12 - Add new task to a project
+# Challenge 12 - Edit project details
 
-The user can now click on the newly created project card and view the project details on the pop-up modal as shown below.
-
-<p align="center">
-  <img src="./images/8a.png" width="350px">
-</p>
-
-In this challenge your task is to implement the funtionaility to add a new task to the relevent project.
-
-When the user clicks on the `Add Task +` button, the modal content will be changed and when the user enters the task details and clicks on the `Save` button, an alert will be displayed with a relevent message.
+The user is able to edit and update the details of a project only if that user is the owner of that project.
 
 <p align="center">
-  <img src="./images/8b.png" width="350px">
+  <img src="./images/9a.png" width="350px">
 </p>
 
-After the page reloads and upon clicking on the relevent project the newly added task will be displayed under the tasks list of that project.
+Note that the above Edit button is only visible if that user is the owner of that project. If the user is not the owner of that project, then the edit button will be hidden.
 
 <p align="center">
-  <img src="./images/8c.png" width="350px">
+  <img src="./images/9b.png" width="350px">
 </p>
 
-To achieve this, you first have to implement the `addNewTask(taskDetails)` method inside the `groupRepository.js` file similar to the previous tasks but in this case the SQL query will be an INSERT query with all the details obtained in the `taskDetails` argument but in the order of the columns in the tasks table.
+After clicking on the save button the updated details will be shown on the project detail modal as shown in the image below.
 
-The Promise has to resolve a message saying `"success"` after successfully saving the task details in the tasks table in the database.
+<p align="center">
+  <img src="./images/9c.png" width="350px">
+</p>
 
-**Note** - Always cross check with the database tables whether the API calls work properly and the database has been updated. You can always run `knex run:seed` to get back to the default data in the database.
+To achieve this, you first have to implement the `updateProject(details, projectId)` method inside the `groupRepository.js` file where a Promise with an UPDATE query is returned. 
+
+The Promise has to resolve a message saying `"success"`.
+
+Next you have to implement a method in the `groupService.js` file in the format shown below.
+
+```javascript
+async function updateProjectReq(details, projectId) {
+  const response = await groupRepository.updateProject(details, projectId);
+  return { response: response, status: httpStatus.OK };
+}
+```
+
+Finally you have to create the relevent route that is being called from the frontend in the `groupRoutes.js` file as shown below.
+
+```javascript
+router.put("<INSERT ROUTE HERE>", async (req, res) => {
+    // Retrive and define the necessary parameters from the request body and parameter here
+
+
+    const response = await groupService.updateProjectReq(details, projectId);
+    res.status(response.status).json(response);
+});
+```
+
+**HINT** - Don't forget to export the defined methods in the necessary files.

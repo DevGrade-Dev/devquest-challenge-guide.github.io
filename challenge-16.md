@@ -1,23 +1,38 @@
-# Challenge 16 - Update task status
+# Challenge 16 - Friend Removal and Request Cancellation
 
-In this challenge you have to enable the user to update the status of a task as similar to the previous challenge.
+In this challenge, you are required to implement functionalities related to removing friends and canceling sent friend requests in the `HobbyScout` application.
 
-<p align="center">
-  <img src="./images/12a.png" width="350px">
-</p>
+## Core Functionalities
 
-<p align="center">
-  <img src="./images/12b.png" width="350px">
-</p>
+1. Remove a friend.
+2. Cancel a sent friend request.
 
-To achieve this, you have to impelement the `updateTaskStatus(taskId, status)` method in the `groupRepository` file and this time it has to be returning a Promise which has an UPDATE query which updates the status of the task using the taskId. 
+# Test Cases
 
-The Promise has to resolve a message saying `"success"`.
+The provided test suite covers various scenarios to ensure the proper functionality of friend removal and request cancellation in HobbyScout.
 
-Afterwards as done in the previous task you have to,
+## Challenge 16.a
 
-1. Implement a method called `updateTaskStatusReq(taskId, status)` in the `groupService.js` file which will call the `groupRepository.updateTaskStatus(details, taskId)` method and return the response.
+The test ensures that users can successfully remove a friend. It checks if the response contains the phrase `Friend removed successfully!` after removing a friend. Modify the method `removeFriend(id)` inside the `friendRepository` to remove a friend successfully. Here's what you need to do:  
+ 1. Rewrite the SQL query to delete the friend relationship from the `friends` table based on the provided request id.  
+ 2. Return `"Friend removed successfully!"` after successfully removing the friend relationship.
 
-2. Create the relevent route that is being called from the frontend in the `groupRoutes.js` file which will call the `groupService.updateTaskStatusReq(taskId, status)` method.
+## Challenge 16.b
 
-**HINT** - Don't forget to export the defined methods in the necessary files.
+This test verifies that the system detects when a user tries to remove a user who is not in their friend list. Update the correct method in `friendRoutes` inside the `routes` directory.
+
+API: ```/api/friends/${reqId}/remove-friend``` should return ```"Friend not found!"```  for this scenario. Here's what you need to do,  
+ 1. Return `"Friend not found!"` if there is no friend relationship with the provided request id in the `friends` table.
+
+## Challenge 16.c
+
+This test ensures that users can successfully cancel a friend request that they have sent. It checks if the response contains the phrase `Request cancelled successfully!` after cancelling a friend request. Modify the method `cancelReq(id)` inside the `friendRepository` to cancel a sent friend request successfully. Here's what you need to do:  
+ 1. Rewrite the SQL query to delete the friend request from the `friends` table based on the provided request id.  
+ 2. Return `"Request canceled successfully!"` after successfully canceling the friend request.
+
+## Challenge 16.d
+
+This test verifies that the system detects when a user tries to cancel a friend request that is not pending. Update the correct method in `friendRoutes` inside the `routes` directory.
+
+API: ```/api/friends/${reqId}/cancel-request``` should return ```"Request not found!"```  for this scenario. Here's what you need to do,  
+ 1. Return `"Request not found!"` if there is no pending friend request with the provided request id in the `friends` table.
