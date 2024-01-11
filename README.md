@@ -174,12 +174,9 @@ Note : We also have provided you with some challenges related to the features of
 | [Challenge 1](./challenge-01.md) | [Challenge 6](./challenge-06.md) | [Challenge 10](./challenge-10.md) |
 | [Challenge 2](./challenge-02.md) | [Challenge 7](./challenge-07.md) | [Challenge 11](./challenge-11.md) |
 | [Challenge 3](./challenge-03.md) | [Challenge 8](./challenge-08.md) | [Challenge 12](./challenge-12.md) |
-| [Challenge 4](./challenge-04.md) |                                   | [Challenge 13](./challenge-13.md) |
-|                                   |                                   | [Challenge 14](./challenge-14.md) |
-|                                   |                                   | [Challenge 15](./challenge-15.md) |
-|                                   |                                   | [Challenge 16](./challenge-16.md) |
-|                                   |                                   | [Challenge 17](./challenge-17.md) |
-|                                   |                                   | [Challenge 18](./challenge-18.md) |
+| [Challenge 4](./challenge-04.md) | [Challenge 14](./challenge-14.md) | [Challenge 13](./challenge-13.md) |
+| [Challenge 15](./challenge-15.md)  | [Challenge 16](./challenge-16.md)   | [Challenge 17](./challenge-17.md) |
+| [Challenge 18](./challenge-18.md)                       |                                   |  |
 
 
 Have fun and happy coding !
