@@ -170,15 +170,17 @@ Although the challenges are independent from one another, it will be easier for 
 
 Note : We also have provided you with some challenges related to the features of the application that will not be evaluated for the competition.
 
-| Hobby Scout | Colab Hub | Project Mate |
-| [Challenge 0](./challenge-00.md)| [Challenge 5](./default-challenge.md)| [Challenge 9](./default-challenge.md) |
-| [Challenge 1](./default-challenge.md)| [Challenge 6](./default-challenge.md)| [Challenge 10](./default-challenge.md) |
-| [Challenge 2](./default-challenge.md)| [Challenge 7](./default-challenge.md)| [Challenge 11](./default-challenge.md) |
-| [Challenge 3](./default-challenge.md)| [Challenge 8](./default-challenge.md)| [Challenge 12](./default-challenge.md) |
-| [Challenge 4](./default-challenge.md)| | [Challenge 13](./default-challenge.md) |
-| | | [Challenge 14](./default-challenge.md) |
-| | | [Challenge 15](./default-challenge.md) |
-| | | [Challenge 16](./default-challenge.md) |
+| [Challenge 0](./challenge-00.md) | [Challenge 5](./challenge-05.md) | [Challenge 9](./challenge-09.md) |
+| [Challenge 1](./challenge-01.md) | [Challenge 6](./challenge-06.md) | [Challenge 10](./challenge-10.md) |
+| [Challenge 2](./challenge-02.md) | [Challenge 7](./challenge-07.md) | [Challenge 11](./challenge-11.md) |
+| [Challenge 3](./challenge-03.md) | [Challenge 8](./challenge-08.md) | [Challenge 12](./challenge-12.md) |
+| [Challenge 4](./challenge-04.md) |                                   | [Challenge 13](./challenge-13.md) |
+|                                   |                                   | [Challenge 14](./challenge-14.md) |
+|                                   |                                   | [Challenge 15](./challenge-15.md) |
+|                                   |                                   | [Challenge 16](./challenge-16.md) |
+|                                   |                                   | [Challenge 17](./challenge-17.md) |
+|                                   |                                   | [Challenge 18](./challenge-18.md) |
+
 
 Have fun and happy coding !
 
